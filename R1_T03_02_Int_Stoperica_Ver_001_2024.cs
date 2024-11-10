@@ -1,6 +1,9 @@
 // https://petlja.org/sr-Cyrl-RS/kurs/14606/5/1318
+// https://petlja.org/sr-Latn-RS/kurs/14606/4/1314
 // https://petlja.org/sr-Cyrl-RS/kurs/14606/35/1394
 // https://petlja.org/sr-Latn-RS/biblioteka/r/Zbirka/02%20Tipovi_detaljniji_pregled/02%20celobrojni_tip/02%20Baratanje_bitovima
+// https://github.com/draganilicnis/R1_T03_02_Int_Stoperica_Ver_001_2024/blob/main/R1_T03_02_Int_Stoperica_Ver_001_2024.cs
+// https://onlinegdb.com/uAOWGsVIV_
 
 using System;
 using System.Diagnostics;
@@ -100,10 +103,10 @@ class R1_T03_02_Int_Stoperica_Ver_001_2024
         t.Start(); Ceo_004_ushort_001_sab(h); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
         t.Start(); Ceo_004_ushort_002_odu(h); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
         t.Start(); Ceo_004_ushort_003_mno(h); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
-        t.Start(); ceo_004_ushort_004_del(h); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
-        t.Start(); ceo_004_ushort_005_mod(h); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
-        t.Start(); ceo_004_ushort_006_mn2(h); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
-        t.Start(); ceo_004_ushort_007_de2(h); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Ceo_004_ushort_004_del(h); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Ceo_004_ushort_005_mod(h); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Ceo_004_ushort_006_mn2(h); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Ceo_004_ushort_007_de2(h); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
 
         // sbyte      1B  =  8b     = 2 ^ 8 =            =                        255
         sbyte k = (sbyte)B;
@@ -111,10 +114,10 @@ class R1_T03_02_Int_Stoperica_Ver_001_2024
         t.Start(); Ceo_005_sbyte_001_sab(k); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
         t.Start(); Ceo_005_sbyte_002_odu(k); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
         t.Start(); Ceo_005_sbyte_003_mno(k); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
-        t.Start(); ceo_005_sbyte_004_del(k); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
-        t.Start(); ceo_005_sbyte_005_mod(k); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
-        t.Start(); ceo_005_sbyte_006_mn2(k); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
-        t.Start(); ceo_005_sbyte_007_de2(k); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Ceo_005_sbyte_004_del(k); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Ceo_005_sbyte_005_mod(k); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Ceo_005_sbyte_006_mn2(k); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Ceo_005_sbyte_007_de2(k); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
 
         // byte       1B  =  8b     = 2 ^ 7 =            =                        127
         byte l = (byte)B;
@@ -122,21 +125,53 @@ class R1_T03_02_Int_Stoperica_Ver_001_2024
         t.Start(); Ceo_005_byte_001_sab(l); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
         t.Start(); Ceo_005_byte_002_odu(l); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
         t.Start(); Ceo_005_byte_003_mno(l); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
-        t.Start(); ceo_005_byte_004_del(l); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
-        t.Start(); ceo_005_byte_005_mod(l); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
-        t.Start(); ceo_005_byte_006_mn2(l); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
-        t.Start(); ceo_005_byte_007_de2(l); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Ceo_005_byte_005_mod(l); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Ceo_005_byte_006_mn2(l); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Ceo_005_byte_007_de2(l); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
 
         // BigInteger
         BigInteger G = (BigInteger)B;
         Console.WriteLine(); Console.Write("BigIntr:".PadRight(8));
-        t.Start(); Ceo_006_BigInteger_001_sab(l); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
-        t.Start(); Ceo_006_BigInteger_002_odu(l); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
-        t.Start(); Ceo_006_BigInteger_003_mno(l); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
-        t.Start(); ceo_006_BigInteger_004_del(l); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
-        t.Start(); ceo_006_BigInteger_005_mod(l); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
-        t.Start(); ceo_006_BigInteger_006_mn2(l); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
-        t.Start(); ceo_006_BigInteger_007_de2(l); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Ceo_006_BigInteger_001_sab(G); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Ceo_006_BigInteger_002_odu(G); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Ceo_006_BigInteger_003_mno(G); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Ceo_006_BigInteger_004_del(G); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Ceo_006_BigInteger_005_mod(G); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Ceo_006_BigInteger_006_mn2(G); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Ceo_006_BigInteger_007_de2(G); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+
+        // float
+        float x = (float)B;
+        Console.WriteLine(); Console.Write("float:".PadRight(8));
+        t.Start(); Real_001_float_001_sab(x); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Real_001_float_002_odu(x); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Real_001_float_003_mno(x); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Real_001_float_004_del(x); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Real_001_float_005_mod(x); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Real_001_float_006_mn2(x); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Real_001_float_007_de2(x); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+
+        // double
+        double y = (double)B;
+        Console.WriteLine(); Console.Write("double:".PadRight(8));
+        t.Start(); Real_002_double_001_sab(y); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Real_002_double_002_odu(y); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Real_002_double_003_mno(y); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Real_002_double_004_del(y); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Real_002_double_005_mod(y); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Real_002_double_006_mn2(y); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Real_002_double_007_de2(y); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+
+        // decimal
+        decimal z = (decimal)B;
+        Console.WriteLine(); Console.Write("decimal:".PadRight(8));
+        t.Start(); Real_003_decimal_001_sab(y); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Real_003_decimal_002_odu(y); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Real_003_decimal_003_mno(y); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Real_003_decimal_004_del(y); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Real_003_decimal_005_mod(y); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Real_003_decimal_006_mn2(y); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Real_003_decimal_007_de2(y); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
 
         Console.WriteLine();
     }
@@ -208,35 +243,63 @@ class R1_T03_02_Int_Stoperica_Ver_001_2024
     static void Ceo_004_ushort_001_sab(ushort B) { for (int i = 0; i < N; i++) B++; }
     static void Ceo_004_ushort_002_odu(ushort B) { for (int i = 0; i < N; i++) B--; }
     static void Ceo_004_ushort_003_mno(ushort B) { for (int i = 0; i < N; i++) B *= 2; }    // ne kompajlira B = B * 2;
-    static void ceo_004_ushort_004_del(ushort B) { for (int i = 0; i < N; i++) B /= 2; }    // ne kompajlira B = B / 2;
-    static void ceo_004_ushort_005_mod(ushort B) { for (int i = 0; i < N; i++) B %= 2; }    // ne kompajlira B = B % 2;
-    static void ceo_004_ushort_006_mn2(ushort B) { for (int i = 0; i < N; i++) B <<= 2; }   // ne kompajlira B = B << 2;
-    static void ceo_004_ushort_007_de2(ushort B) { for (int i = 0; i < N; i++) B >>= 2; }   // ne kompajlira B = B >> 2;
+    static void Ceo_004_ushort_004_del(ushort B) { for (int i = 0; i < N; i++) B /= 2; }    // ne kompajlira B = B / 2;
+    static void Ceo_004_ushort_005_mod(ushort B) { for (int i = 0; i < N; i++) B %= 2; }    // ne kompajlira B = B % 2;
+    static void Ceo_004_ushort_006_mn2(ushort B) { for (int i = 0; i < N; i++) B <<= 2; }   // ne kompajlira B = B << 2;
+    static void Ceo_004_ushort_007_de2(ushort B) { for (int i = 0; i < N; i++) B >>= 2; }   // ne kompajlira B = B >> 2;
 
     // sbyte
     static void Ceo_005_sbyte_001_sab(sbyte B) { for (int i = 0; i < N; i++) B++; }
     static void Ceo_005_sbyte_002_odu(sbyte B) { for (int i = 0; i < N; i++) B--; }
     static void Ceo_005_sbyte_003_mno(sbyte B) { for (int i = 0; i < N; i++) B *= 2; }      // ne kompajlira B = B * 2;
-    static void ceo_005_sbyte_004_del(sbyte b) { for (int i = 0; i < N; i++) B = B / 2; }   
-    static void ceo_005_sbyte_005_mod(sbyte b) { for (int i = 0; i < N; i++) B = B % 2; }   
-    static void ceo_005_sbyte_006_mn2(sbyte b) { for (int i = 0; i < N; i++) B = B << 2; }  
-    static void ceo_005_sbyte_007_de2(sbyte b) { for (int i = 0; i < N; i++) B = B >> 2; }  
+    static void Ceo_005_sbyte_004_del(sbyte b) { for (int i = 0; i < N; i++) B = B / 2; }   
+    static void Ceo_005_sbyte_005_mod(sbyte b) { for (int i = 0; i < N; i++) B = B % 2; }   
+    static void Ceo_005_sbyte_006_mn2(sbyte b) { for (int i = 0; i < N; i++) B = B << 2; }  
+    static void Ceo_005_sbyte_007_de2(sbyte b) { for (int i = 0; i < N; i++) B = B >> 2; }  
 
     // byte
     static void Ceo_005_byte_001_sab(byte B) { for (int i = 0; i < N; i++) B++; }
     static void Ceo_005_byte_002_odu(byte B) { for (int i = 0; i < N; i++) B--; }
     static void Ceo_005_byte_003_mno(byte B) { for (int i = 0; i < N; i++) B *= 2; }        // ne kompajlira B = B * 2;
-    static void ceo_005_byte_004_del(byte b) { for (int i = 0; i < N; i++) B = B / 2; }     
-    static void ceo_005_byte_005_mod(byte b) { for (int i = 0; i < N; i++) B = B % 2; }     
-    static void ceo_005_byte_006_mn2(byte b) { for (int i = 0; i < N; i++) B = B << 2; }    
-    static void ceo_005_byte_007_de2(byte b) { for (int i = 0; i < N; i++) B = B >> 2; }
+    static void Ceo_005_byte_004_del(byte b) { for (int i = 0; i < N; i++) B = B / 2; }     
+    static void Ceo_005_byte_005_mod(byte b) { for (int i = 0; i < N; i++) B = B % 2; }     
+    static void Ceo_005_byte_006_mn2(byte b) { for (int i = 0; i < N; i++) B = B << 2; }    
+    static void Ceo_005_byte_007_de2(byte b) { for (int i = 0; i < N; i++) B = B >> 2; }
 
     // BigInteger
     static void Ceo_006_BigInteger_001_sab(BigInteger B) { for (int i = 0; i < N; i++) B++; }
     static void Ceo_006_BigInteger_002_odu(BigInteger B) { for (int i = 0; i < N; i++) B--; }
     static void Ceo_006_BigInteger_003_mno(BigInteger B) { for (int i = 0; i < N; i++) B = B * 2; } 
-    static void ceo_006_BigInteger_004_del(BigInteger b) { for (int i = 0; i < N; i++) B = B / 2; }
-    static void ceo_006_BigInteger_005_mod(BigInteger b) { for (int i = 0; i < N; i++) B = B % 2; }
-    static void ceo_006_BigInteger_006_mn2(BigInteger b) { for (int i = 0; i < N; i++) B = B << 2; }
-    static void ceo_006_BigInteger_007_de2(BigInteger b) { for (int i = 0; i < N; i++) B = B >> 2; }
+    static void Ceo_006_BigInteger_004_del(BigInteger b) { for (int i = 0; i < N; i++) B = B / 2; }
+    static void Ceo_006_BigInteger_005_mod(BigInteger b) { for (int i = 0; i < N; i++) B = B % 2; }
+    static void Ceo_006_BigInteger_006_mn2(BigInteger b) { for (int i = 0; i < N; i++) B = B << 2; }
+    static void Ceo_006_BigInteger_007_de2(BigInteger b) { for (int i = 0; i < N; i++) B = B >> 2; }
+
+    // float
+    static void Real_001_float_001_sab(float B) { for (int i = 0; i < N; i++) B++; }
+    static void Real_001_float_002_odu(float B) { for (int i = 0; i < N; i++) B--; }
+    static void Real_001_float_003_mno(float B) { for (int i = 0; i < N; i++) B = B * 2; }
+    static void Real_001_float_004_del(float b) { for (int i = 0; i < N; i++) B = B / 2; }
+    static void Real_001_float_005_mod(float b) { for (int i = 0; i < N; i++) B = B % 2; }
+    static void Real_001_float_006_mn2(float b) { for (int i = 0; i < N; i++) B = B << 2; }
+    static void Real_001_float_007_de2(float b) { for (int i = 0; i < N; i++) B = B >> 2; }
+
+    // double
+    static void Real_002_double_001_sab(double B) { for (int i = 0; i < N; i++) B++; }
+    static void Real_002_double_002_odu(double B) { for (int i = 0; i < N; i++) B--; }
+    static void Real_002_double_003_mno(double B) { for (int i = 0; i < N; i++) B = B * 2; }
+    static void Real_002_double_004_del(double b) { for (int i = 0; i < N; i++) B = B / 2; }
+    static void Real_002_double_005_mod(double b) { for (int i = 0; i < N; i++) B = B % 2; }
+    static void Real_002_double_006_mn2(double b) { for (int i = 0; i < N; i++) B = B << 2; }
+    static void Real_002_double_007_de2(double b) { for (int i = 0; i < N; i++) B = B >> 2; }
+
+    // decimal
+    static void Real_003_decimal_001_sab(decimal B) { for (int i = 0; i < N; i++) B++; }
+    static void Real_003_decimal_002_odu(decimal B) { for (int i = 0; i < N; i++) B--; }
+    static void Real_003_decimal_003_mno(decimal B) { for (int i = 0; i < N; i++) B = B * 2; }
+    static void Real_003_decimal_004_del(decimal b) { for (int i = 0; i < N; i++) B = B / 2; }
+    static void Real_003_decimal_005_mod(decimal b) { for (int i = 0; i < N; i++) B = B % 2; }
+    static void Real_003_decimal_006_mn2(decimal b) { for (int i = 0; i < N; i++) B = B << 2; }
+    static void Real_003_decimal_007_de2(decimal b) { for (int i = 0; i < N; i++) B = B >> 2; }
+
 }
