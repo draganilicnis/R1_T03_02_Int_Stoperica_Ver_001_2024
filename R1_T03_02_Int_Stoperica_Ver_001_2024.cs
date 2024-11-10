@@ -101,6 +101,30 @@ class R1_T03_02_Int_Stoperica_Ver_001_2024
         t.Start(); ceo_004_ushort_005_mod(h); t.Stop(); Console.Write(" mod: "); Console.Write(t.Elapsed); t.Reset();
         t.Start(); ceo_004_ushort_006_mn2(h); t.Stop(); Console.Write(" mn2: "); Console.Write(t.Elapsed); t.Reset();
         t.Start(); ceo_004_ushort_007_de2(h); t.Stop(); Console.Write(" de2: "); Console.Write(t.Elapsed); t.Reset();
+
+        // sbyte      1B  =  8b     = 2 ^ 8 =            =                        255
+        sbyte k = (sbyte)B;
+        Console.WriteLine(); Console.Write("sbyte ");
+        t.Start(); Ceo_005_sbyte_001_sab(k); t.Stop(); Console.Write(" sab: "); Console.Write(t.Elapsed); t.Reset();
+        t.Start(); Ceo_005_sbyte_002_odu(k); t.Stop(); Console.Write(" odu: "); Console.Write(t.Elapsed); t.Reset();
+        t.Start(); Ceo_005_sbyte_003_mno(k); t.Stop(); Console.Write(" mno: "); Console.Write(t.Elapsed); t.Reset();
+        t.Start(); ceo_005_sbyte_004_del(k); t.Stop(); Console.Write(" del: "); Console.Write(t.Elapsed); t.Reset();
+        t.Start(); ceo_005_sbyte_005_mod(k); t.Stop(); Console.Write(" mod: "); Console.Write(t.Elapsed); t.Reset();
+        t.Start(); ceo_005_sbyte_006_mn2(k); t.Stop(); Console.Write(" mn2: "); Console.Write(t.Elapsed); t.Reset();
+        t.Start(); ceo_005_sbyte_007_de2(k); t.Stop(); Console.Write(" de2: "); Console.Write(t.Elapsed); t.Reset();
+
+        // byte       1B  =  8b     = 2 ^ 7 =            =                        127
+        byte l = (byte)B;
+        Console.WriteLine(); Console.Write("sbyte ");
+        t.Start(); Ceo_005_byte_001_sab(l); t.Stop(); Console.Write(" sab: "); Console.Write(t.Elapsed); t.Reset();
+        t.Start(); Ceo_005_byte_002_odu(l); t.Stop(); Console.Write(" odu: "); Console.Write(t.Elapsed); t.Reset();
+        t.Start(); Ceo_005_byte_003_mno(l); t.Stop(); Console.Write(" mno: "); Console.Write(t.Elapsed); t.Reset();
+        t.Start(); ceo_005_byte_004_del(l); t.Stop(); Console.Write(" del: "); Console.Write(t.Elapsed); t.Reset();
+        t.Start(); ceo_005_byte_005_mod(l); t.Stop(); Console.Write(" mod: "); Console.Write(t.Elapsed); t.Reset();
+        t.Start(); ceo_005_byte_006_mn2(l); t.Stop(); Console.Write(" mn2: "); Console.Write(t.Elapsed); t.Reset();
+        t.Start(); ceo_005_byte_007_de2(l); t.Stop(); Console.Write(" de2: "); Console.Write(t.Elapsed); t.Reset();
+
+        Console.WriteLine();
     }
 
     // int
@@ -192,4 +216,5 @@ class R1_T03_02_Int_Stoperica_Ver_001_2024
     static void ceo_005_byte_005_mod(byte b) { for (int i = 0; i < N; i++) B = B % 2; }
     static void ceo_005_byte_006_mn2(byte b) { for (int i = 0; i < N; i++) B = B << 2; }
     static void ceo_005_byte_007_de2(byte b) { for (int i = 0; i < N; i++) B = B >> 2; }
+
 }
