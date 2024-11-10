@@ -10,8 +10,9 @@ class R1_T03_02_Int_Stoperica_Ver_001_2024
     static public int N = 1000 * 1000 * 1000;
     static void Main()
     {
-        Stopwatch t = new Stopwatch();
         int B = 1000 * 1000 * 1000 + 7;
+
+        Stopwatch t = new Stopwatch();
 
         // int      4B  = 32b   = 2 ^ 31 =   2 * 10^8     =             2 147 483 647
         int a = B;
@@ -78,6 +79,28 @@ class R1_T03_02_Int_Stoperica_Ver_001_2024
         t.Start(); Ceo_003_UInt64_005_mod(f); t.Stop(); Console.Write(" mod: "); Console.Write(t.Elapsed); t.Reset();
         t.Start(); Ceo_003_UInt64_006_mn2(f); t.Stop(); Console.Write(" mn2: "); Console.Write(t.Elapsed); t.Reset();
         t.Start(); Ceo_003_UInt64_007_de2(f); t.Stop(); Console.Write(" de2: "); Console.Write(t.Elapsed); t.Reset();
+
+        // short      2B  = 16b   = 2 ^ 15 = 32 * 10^3  =                     32 767
+        short g = (short)B;
+        Console.WriteLine(); Console.Write("short ");
+        t.Start(); Ceo_004_short_001_sab(g); t.Stop(); Console.Write(" sab: "); Console.Write(t.Elapsed); t.Reset();
+        t.Start(); Ceo_004_short_002_odu(g); t.Stop(); Console.Write(" odu: "); Console.Write(t.Elapsed); t.Reset();
+        //t.Start(); Ceo_004_short_003_mno(f); t.Stop(); Console.Write(" mno: "); Console.Write(t.Elapsed); t.Reset();
+        //t.Start(); Ceo_004_short_004_del(f); t.Stop(); Console.Write(" del: "); Console.Write(t.Elapsed); t.Reset();
+        //t.Start(); Ceo_004_short_005_mod(f); t.Stop(); Console.Write(" mod: "); Console.Write(t.Elapsed); t.Reset();
+        //t.Start(); Ceo_004_short_006_mn2(f); t.Stop(); Console.Write(" mn2: "); Console.Write(t.Elapsed); t.Reset();
+        //t.Start(); Ceo_004_short_007_de2(f); t.Stop(); Console.Write(" de2: "); Console.Write(t.Elapsed); t.Reset();
+
+        // ushort      2B  = 16b   = 2 ^ 16 = 65 * 10^3  =                     65 535
+        ushort h = (ushort)B;
+        Console.WriteLine(); Console.Write("short ");
+        t.Start(); Ceo_004_ushort_001_sab(h); t.Stop(); Console.Write(" sab: "); Console.Write(t.Elapsed); t.Reset();
+        t.Start(); Ceo_004_ushort_002_odu(h); t.Stop(); Console.Write(" odu: "); Console.Write(t.Elapsed); t.Reset();
+        //t.Start(); Ceo_004_short_003_mno(f); t.Stop(); Console.Write(" mno: "); Console.Write(t.Elapsed); t.Reset();
+        //t.Start(); Ceo_004_short_004_del(f); t.Stop(); Console.Write(" del: "); Console.Write(t.Elapsed); t.Reset();
+        //t.Start(); Ceo_004_short_005_mod(f); t.Stop(); Console.Write(" mod: "); Console.Write(t.Elapsed); t.Reset();
+        //t.Start(); Ceo_004_short_006_mn2(f); t.Stop(); Console.Write(" mn2: "); Console.Write(t.Elapsed); t.Reset();
+        //t.Start(); Ceo_004_short_007_de2(f); t.Stop(); Console.Write(" de2: "); Console.Write(t.Elapsed); t.Reset();
     }
 
     // int
@@ -133,4 +156,22 @@ class R1_T03_02_Int_Stoperica_Ver_001_2024
     static void Ceo_003_UInt64_005_mod(UInt64 B) { for (int i = 0; i < N; i++) B = B % 2;  }
     static void Ceo_003_UInt64_006_mn2(UInt64 B) { for (int i = 0; i < N; i++) B = B << 2; }
     static void Ceo_003_UInt64_007_de2(UInt64 B) { for (int i = 0; i < N; i++) B = B >> 2; }
+
+    // short
+    static void Ceo_004_short_001_sab(short B) { for (int i = 0; i < N; i++) B++; }
+    static void Ceo_004_short_002_odu(short B) { for (int i = 0; i < N; i++) B--; }
+    //static void Ceo_004_short_003_mno(short B) { for (int i = 0; i < N; i++) B = B * 2; }
+    //static void Ceo_004_short_004_del(short B) { for (int i = 0; i < N; i++) B = B / 2; }
+    //static void Ceo_004_short_005_mod(short B) { for (int i = 0; i < N; i++) B = B % 2; }
+    //static void Ceo_004_short_006_mn2(short B) { for (int i = 0; i < N; i++) B = B << 2; }
+    //static void Ceo_004_short_007_de2(short B) { for (int i = 0; i < N; i++) B = B >> 2; }
+
+    // ushort
+    static void Ceo_004_ushort_001_sab(ushort B) { for (int i = 0; i < N; i++) B++; }
+    static void Ceo_004_ushort_002_odu(ushort B) { for (int i = 0; i < N; i++) B--; }
+    //static void Ceo_004_ushort_003_mno(ushort B) { for (int i = 0; i < N; i++) B = B * 2; }
+    //static void ceo_004_ushort_004_del(ushort b) { for (int i = 0; i < n; i++) b = b / 2; }
+    //static void ceo_004_ushort_005_mod(ushort b) { for (int i = 0; i < n; i++) b = b % 2; }
+    //static void ceo_004_ushort_006_mn2(ushort b) { for (int i = 0; i < n; i++) b = b << 2; }
+    //static void ceo_004_ushort_007_de2(ushort b) { for (int i = 0; i < n; i++) b = b >> 2; }
 }
