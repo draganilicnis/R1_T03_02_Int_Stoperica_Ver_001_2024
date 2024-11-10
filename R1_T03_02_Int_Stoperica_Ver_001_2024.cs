@@ -165,13 +165,13 @@ class R1_T03_02_Int_Stoperica_Ver_001_2024
         // decimal
         decimal z = (decimal)B;
         Console.WriteLine(); Console.Write("decimal:".PadRight(8));
-        t.Start(); Real_003_decimal_001_sab(y); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
-        t.Start(); Real_003_decimal_002_odu(y); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
-        t.Start(); Real_003_decimal_003_mno(y); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
-        t.Start(); Real_003_decimal_004_del(y); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
-        t.Start(); Real_003_decimal_005_mod(y); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
-        t.Start(); Real_003_decimal_006_mn2(y); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
-        t.Start(); Real_003_decimal_007_de2(y); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Real_003_decimal_001_sab(z); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Real_003_decimal_002_odu(z); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Real_003_decimal_003_mno(z); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Real_003_decimal_004_del(z); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Real_003_decimal_005_mod(z); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Real_003_decimal_006_mn2(z); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
+        t.Start(); Real_003_decimal_007_de2(z); t.Stop(); Console.Write(t.Elapsed + " "); t.Reset();
 
         Console.WriteLine();
     }
